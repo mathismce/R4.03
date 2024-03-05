@@ -3,14 +3,15 @@
 
 
 :root{
-    --blue: 206 90 39;
-    --light-blue: 210 76 69;
-    --green: 130 92 79;
-    --red: 0 82 79;
-    --white: 0 0 100;
-    --black: 0 0 0;
+    --blue: hsl(206, 90%, 39%);
+    --light-blue: hsl(210, 76%, 69%);
+    --green: hsl(130, 92%, 79%);
+    --red: hsl(0, 82%, 79%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
 
     --bg: var(--blue);
+    --text-base : var(--white);
 
     --fs-title: 2.5rem;
     
@@ -47,6 +48,8 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  background-color: var(--bg);
+  color: var(--text-base);
 }
 
 /* Set shorter line heights on headings and interactive elements */
