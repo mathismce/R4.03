@@ -8,12 +8,15 @@
     --green: hsl(130, 92%, 79%);
     --red: hsl(0, 82%, 79%);
     --white: hsl(0, 0%, 100%);
+    --transparent-white: hsl(0, 0%, 100%, 50%);
     --black: hsl(0, 0%, 0%);
 
     --bg: var(--blue);
+    --bg-second: var(--transparent-white);
     --text-base : var(--white);
 
     --fs-title: 2.5rem;
+    --fs-subtitle: 1rem;
     
     --ff-title: 'Fredoka', sans-serif;
 }
@@ -94,6 +97,15 @@ textarea:not([rows]) {
 }
 
 .title{
+    text-align: center;
+    margin-top: 3rem;
     font-size: var(--fs-title);
     font-family: var(--ff-title);
+}
+
+.mt-dents{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 80px;
 }
