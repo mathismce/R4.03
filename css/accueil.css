@@ -1,3 +1,9 @@
+.accueil{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
 .accueil__subtitle{
     text-align: center;
     font-size: var(--fs-subtitle);
@@ -11,7 +17,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    gap: 3rem;
+    gap: 2rem;
 
 }
 
@@ -19,8 +25,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    width: 16rem;
+    height: 16rem;
+    padding: 1rem;
+    background-color: var(--bg-second);
+    border-radius: 10px;
+}
+
+.accueil__list-img{
     width: 10rem;
     height: 10rem;
-    gap: 1rem;
-    background-color: var(--bg-second);
 }
+
+.accueil__list-subtitle{
+    margin: 0;
+    font-size: var(--fs-title);
+    font-family: var(--ff-title);
+
+}
+
