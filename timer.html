@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/timer.css">
 </head>
+
 <body>
 
-    <header>
-        <img src="./assets/arrow.svg" alt="">
-        <h2>Robin le requin</h2>
+    <header class="header">
+        <img src="./assets/arrow.svg" alt="" class="header__arrow">
+        <h2 class="header__title">Robin le requin</h2>
     </header>
-    <div>
-        <div id="timer">02:00</div>
-        <div>
-            <button></button>
-            <button></button>
+    <div class="timer">
+        <div id="circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 436 436">
+                <g id="timer-circle" data-name="Ellipse 1" fill="#61B0FF" stroke="#61B0FF" stroke-width="10">
+                    <circle cx="218" cy="218" r="218" stroke="none" />
+                    <circle cx="218" cy="218" r="213" fill="none" />
+                </g>
+            </svg>
         </div>
-        <img src="./assets/requin-3.svg" alt="">
+
+
+        <div id="timer" class="timer__display">02:00</div>
+        <div class="timer__controls">
+            <button id="stop" class="timer__button"><img src="./assets/stop.svg" alt="stop"
+                    class="timer__icon"></button>
+            <button id="play" class="timer__button"><img src="./assets/pause.svg" alt="pause"
+                    class="timer__icon"></button>
+        </div>
+        <img src="./assets/requin-3.svg" alt="" class="timer__image">
     </div>
-    <script type="module" src="main.js"></script>
+
+    <script type="module" src="/js/timer.js"></script>
 
 </body>
+
 </html>
